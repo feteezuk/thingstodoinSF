@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My goal is to help you navigate San Francisco in a way that you can find fun things to do here whether you’re visiting for the day or you have recently moved here. Not sure what to do today or this weekend? Find fun things to do here whether you’re visiting for the day or you have recently moved here." />
+    <title>Best Things to Do in San Francisco – Contact me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="thingstodo.css">
+    <link rel="alternate" href="http://hills.ccsf.edu/~jhollan2/sf/contactthingstodoinsanfrancisco.html" hreflang="en-us" />
+    <link rel="alternate" href="http://hills.ccsf.edu/~jhollan2/sf/contactthingstodoinsanfrancisco.html" hreflang="zh-cn" />
+    <style>
+        #bio {
+            margin: 20px auto;
+            padding: 2%;
+            text-align: center;
+            width: 96%;
+            display: inline-block;
+        }
+        
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: darkgray;
+        }
+        
+        fieldset {
+            width: 85%;
+            margin: auto;
+        }
+        
+        label {
+            float: left;
+            width: 120px;
+            font-weight: bold;
+        }
+        
+        #nofloat label {
+            float: none;
+        }
+        
+        .centralize {
+            text-align: center;
+        }
+        
+        textarea {
+            width: 300px;
+        }
+        
+        nav {
+            padding-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure><img src="images/thumb/San_Francisco_thumb.jpg" alt="Golden Gate Bridge Photo"></figure>
+        <h1>Fun Things to Do In San Francisco | San Francisco Tours -</h1></header>
+    <div>
+        <figure><img id="large_pic_sf" src="golden_gate_bridge.jpg" alt="picture of the golden gate bridge">
+            <figcaption><a href="https://www.flickr.com/photos/davidyuweb/10465954096/in/photolist-pqeFhg-f7CCSP-isahGF-ndxh37-kwFZDc-oDA3Hy-97T978-97WfVo-9jxi7A-drYxtG-akq85-7oqbS-8cKqJc-4kBHoc-buULq5-drB1Xg-5c1hyQ-74DD5H-kB2Hpy-gWQKwq-57sER6-ccBYud-nLu2Z5-6DDGfa-59GSfc-dZP8ds-kK2XMe-fpRzxT-oKD1f-i4m5x6-drYp4x-6DHRtE-5c6EZa-97T8BV-dEcbYS-8sZs5P-bF4pgD-3bqKCH-3et4Wh-bysiUM-3bvf9G-8z8mGp-97WgFN-hohnZ5-6zZhq2-3bvdL7-8K8Fyx-8cNMis-4p3zCN-cbZJD9">Photo By Morning Glow</a></figcaption>
+        </figure>
+    </div>
+    <div class="header_nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutthingstodoinsanfrancisco.html">About</a></li>
+                <li><a href="contactthingstodoinsanfrancisco.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <form method="post" action="http://hills.ccsf.edu/~jhollan2/sf/php/process.php" title="Things to Do in San Francisco Contact Form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" maxlength="50" autofocus required/>
+            </p>
+            <p>
+                <label for="recipient">Email Address:</label>
+                <input id="recipient" name="recipient" type="email" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Tours Interested In:</legend>
+            <p>
+                <label for="question">Questions:</label>
+                <textarea id="question" name="question" cols="50" rows="3" placeholder="type your comments here" required></textarea>
+        </fieldset>
+        <p class="centralize">
+            <input type="submit" onclick="send()" value="Submit Only" />
+        </p>
+        <p class="centralize">
+            <input type="reset" value="Clear Form">
+        </p>
+        <p id="data_return"></p>
+    </form>
+    <hr>
+    <aside id="bio">
+        <h3>Hi, my name is Jonathan.</h3><img src="images/thumb/author.jpg" alt="picture of the author" />
+        <p>I’m a San Franciscan Native, born and raised, and my goal is to help you navigate San Francisco in a way that you can find fun things to do here whether you’re visiting for the day or you have recently moved here. </p>
+        <p>Feel free to reach out with questions about places to stay, places to visit, places to eat, or anything else you want to know about San Francisco.</p>
+    </aside>
+
+    <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-74285664-2', 'auto'); ga('send', 'pageview'); </script>
+</body>
+
+</html>
